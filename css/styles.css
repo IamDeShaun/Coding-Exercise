@@ -1,0 +1,177 @@
+/*--------------------------------------------------------------
+>>> CSS TABLE OF CONTENTS:
+----------------------------------------------------------------
+#HTMl & Body
+# Navigation
+# Main
+# Footer
+# Media Queries
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+  >> HTML & Body
+---------------------------------------------------------------*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+html, body {
+  height: 100%;
+}
+body {
+	font-family: 'Crimson Pro', serif !important;
+	font-size: .9em !important;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+}
+
+/*--------------------------------------------------------------
+  >> Navigation
+---------------------------------------------------------------*/
+
+.site-brand{
+	font-size: 1.75em; 
+	font-weight: 600 !important;
+}
+
+nav ul li a {
+	text-transform: uppercase;
+}
+
+.navbar-dark .navbar-toggler {
+	color: rgba(255,255,255,1) !important;
+	border: none;
+}
+
+i.fas.fa-bars.fa-large { font-size: 1.5em !important;}
+
+.nav-bg {
+background: #333;
+
+}
+
+nav a.nav-link {
+font-size: 1rem !important;
+color: #fff !important;
+}
+
+nav a.nav-link:hover {
+	font-size: 1rem !important;
+	color: #00f8fb !important;
+	transition-timing-function: ease-in-out;
+  transition-duration: .4s;
+  transition-property: left, visibility;
+	transition: .4s ease-in-out;
+
+}
+
+/*--------------------------------------------------------------
+  >> Main
+---------------------------------------------------------------*/
+main {
+	padding: 2.33em;
+	line-height: 1.5;
+	flex: 1 0 auto;
+}
+
+.a11y main {
+	color: #999;
+}
+
+.ally main.sad {
+	background: #003679;
+	color: #e0ffff;
+}
+
+main h1 {
+	font-size: 1.7em;
+	font-weight: 600;
+}
+
+main h2 {
+	font-size: 1.2em;
+	font-weight: 600;
+}
+
+main h3 {
+	font-size: 1em;
+	font-weight: 600;
+}
+
+main a {
+	color: #004ea2 !important;
+	font-weight: 600;
+}
+
+main .table { width: 50% !important;}
+
+table caption {
+	color: #000;
+	font-weight: 600;
+}
+
+.ally main.happy {
+	background: #43285d;
+	color: #fff;
+}
+
+/*--------------------------------------------------------------
+  >> Footer
+---------------------------------------------------------------*/
+
+footer {
+	text-align: center;
+		background: #4e4e4e;
+		color: #fff;
+		padding: 2.33em;
+		flex-shrink: 0;
+		}
+	footer a {
+		text-decoration: none;
+		color: #00f8fb;
+	}
+	footer a:hover, footer a:active {
+		text-decoration: underline;
+		color: #00f8fb;
+	
+	}
+	footer a:visted { 
+		text-decoration: none;
+		color: #34dbdb;
+	}
+
+	/*--------------------------------------------------------------
+  >> Media Queries
+---------------------------------------------------------------*/
+@media only screen and (max-width: 400px) { 
+
+	.site-brand{
+		font-size: 1.2em; 
+		font-weight: 600 !important;
+	}
+
+	main h1 {
+		font-size: 1.3em;
+		font-weight: 600;
+	}
+	
+	main h2 {
+		font-size: 1em;
+		font-weight: 600;
+	}
+	
+	main h3 {
+		font-size: .8em;
+		font-weight: 600;
+	}
+}
+
+
+
+
